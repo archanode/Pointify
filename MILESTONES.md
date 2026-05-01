@@ -8,9 +8,14 @@
 - [x] Supabase project + schema
 - [x] Netlify deployment
 - [x] Web app (Next.js) - basic landing
-- [ ] Web Auth (login/signup)
-- [ ] iOS - migrate to Supabase
+- [x] Web Auth (login/signup) ✅
+- [x] iOS - Supabase SDK integrated (needs pod install + testing)
 - [ ] Android - needs source code or rebuild
+
+### Next Steps
+1. Run `pod install` in go-ios/ on Mac
+2. Test iOS app with Supabase
+3. Decide Android approach (rebuild vs find source)
 
 ### Blockers
 - Android: Only APK available, no source code
