@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import { createClient } from '@/lib/supabase/client'
-import type { Database } from '@/types/database'
+import Header from '@/components/Header'
 
 interface NearbyPoint {
   id: string
@@ -66,23 +66,7 @@ export default function Home(): React.ReactElement {
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-purple-600 to-blue-600">
-      {/* Header */}
-      <header className="p-4 flex items-center justify-between text-white">
-        <div className="flex items-center gap-2">
-          <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
-            <span className="text-purple-600 font-bold text-xl">P</span>
-          </div>
-          <h1 className="text-2xl font-bold">Pointify</h1>
-        </div>
-        <nav className="flex gap-4">
-          <a href="/auth/login" className="px-4 py-2 bg-white/20 rounded-lg hover:bg-white/30 transition">
-            Login
-          </a>
-          <a href="/auth/signup" className="px-4 py-2 bg-white rounded-lg text-purple-600 font-semibold hover:bg-white/90 transition">
-            Sign Up
-          </a>
-        </nav>
-      </header>
+      <Header />
 
       {/* Hero */}
       <section className="px-4 py-16 text-center text-white">

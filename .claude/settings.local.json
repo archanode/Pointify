@@ -14,7 +14,16 @@
       "Bash(npx create-next-app@latest *)",
       "Bash(npm install *)",
       "Bash(mkdir -p src/types)",
-      "Bash(npm run *)"
+      "Bash(npm run *)",
+      "Bash(git restore *)",
+      "Bash(rm -f \"supbase keys.txt\")",
+      "Bash(echo \"*.txt\")",
+      "Bash(echo \"supabase/.temp/\")",
+      "Bash(git push *)",
+      "Bash(netlify link *)",
+      "Bash(netlify env:set NEXT_PUBLIC_SUPABASE_URL \"https://fjzfreqtmsucbadnhxkc.supabase.co\")",
+      "Bash(netlify env:set NEXT_PUBLIC_SUPABASE_ANON_KEY \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZqemZyZXF0bXN1Y2JhZG5oeGtjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzc2MjQwNzEsImV4cCI6MjA5MzIwMDA3MX0.mXyeiIWrg9ab5Zsp-yYkLuV7kifpX1_fCnqWVWRFEQ0\")",
+      "Bash(netlify deploy *)"
     ]
   }
 }
