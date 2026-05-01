@@ -41,17 +41,14 @@ android {
     }
 
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.4"
+        kotlinCompilerExtensionVersion = "1.5.8"
     }
 }
 
 dependencies {
-    // Supabase
-    implementation(platform("io.github.jan-tennert.supabase:bom:2.0.4"))
-    implementation("io.github.jan-tennert.supabase:postgrest-kt")
-    implementation("io.github.jan-tennert.supabase:auth-kt")
-    implementation("io.github.jan-tennert.supabase:realtime-kt")
-    implementation("io.ktor:ktor-client-android:2.3.6")
+    // HTTP Client (for Supabase REST API)
+    implementation("com.squareup.okhttp3:okhttp:4.12.0")
+    implementation("com.squareup.moshi:moshi-kotlin:1.15.0")
 
     // Compose
     implementation(platform("androidx.compose:compose-bom:2024.01.00"))
